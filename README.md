@@ -46,16 +46,28 @@
       <img alt="manga-frontend" src="./profile/pin-manga-frontend-light.svg" />
     </picture>
   </a>
-  <a href="https://github.com/TheProdigy161/aws-s3-file-validator">
+  <a href="https://github.com/TheProdigy161/NodeJsGame">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-aws-s3-file-validator-dark.svg" />
-      <img alt="aws-s3-file-validator" src="./profile/pin-aws-s3-file-validator-light.svg" />
+      <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-NodeJsGame-dark.svg" />
+      <img alt="NodeJsGame" src="./profile/pin-NodeJsGame-light.svg" />
+    </picture>
+  </a>
+  <a href="https://github.com/TheProdigy161/ts-object-parser">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-ts-object-parser-dark.svg" />
+      <img alt="ts-object-parser" src="./profile/pin-ts-object-parser-light.svg" />
     </picture>
   </a>
   <a href="https://github.com/TheProdigy161/gitpruned">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-gitpruned-dark.svg" />
       <img alt="gitpruned" src="./profile/pin-gitpruned-light.svg" />
+    </picture>
+  </a>
+  <a href="https://github.com/TheProdigy161/aws-s3-file-validator">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-aws-s3-file-validator-dark.svg" />
+      <img alt="aws-s3-file-validator" src="./profile/pin-aws-s3-file-validator-light.svg" />
     </picture>
   </a>
 </p>

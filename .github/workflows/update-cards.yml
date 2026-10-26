@@ -100,23 +100,43 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
 
-      - name: Generate pin-aws-s3-file-validator (light)
+      - name: Generate pin-NodeJsGame (light)
         uses: stats-organization/github-readme-stats-action@v2
         continue-on-error: true
         with:
           card: pin
-          options: username=TheProdigy161&repo=aws-s3-file-validator&hide_border=true&theme=light_github_repocard
-          path: profile/pin-aws-s3-file-validator-light.svg
+          options: username=TheProdigy161&repo=NodeJsGame&hide_border=true&theme=light_github_repocard
+          path: profile/pin-NodeJsGame-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
 
-      - name: Generate pin-aws-s3-file-validator (dark)
+      - name: Generate pin-NodeJsGame (dark)
         uses: stats-organization/github-readme-stats-action@v2
         continue-on-error: true
         with:
           card: pin
-          options: username=TheProdigy161&repo=aws-s3-file-validator&hide_border=true&theme=dark_github_repocard
-          path: profile/pin-aws-s3-file-validator-dark.svg
+          options: username=TheProdigy161&repo=NodeJsGame&hide_border=true&theme=dark_github_repocard
+          path: profile/pin-NodeJsGame-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin-ts-object-parser (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=TheProdigy161&repo=ts-object-parser&hide_border=true&theme=light_github_repocard
+          path: profile/pin-ts-object-parser-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin-ts-object-parser (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=TheProdigy161&repo=ts-object-parser&hide_border=true&theme=dark_github_repocard
+          path: profile/pin-ts-object-parser-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
 
@@ -137,6 +157,26 @@ jobs:
           card: pin
           options: username=TheProdigy161&repo=gitpruned&hide_border=true&theme=dark_github_repocard
           path: profile/pin-gitpruned-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin-aws-s3-file-validator (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=TheProdigy161&repo=aws-s3-file-validator&hide_border=true&theme=light_github_repocard
+          path: profile/pin-aws-s3-file-validator-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin-aws-s3-file-validator (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=TheProdigy161&repo=aws-s3-file-validator&hide_border=true&theme=dark_github_repocard
+          path: profile/pin-aws-s3-file-validator-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
 

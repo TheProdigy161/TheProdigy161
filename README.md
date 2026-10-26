@@ -19,14 +19,14 @@
 <p align="left">
   <a href="https://github.com/TheProdigy161">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=TheProdigy161&show_icons=true&rank_icon=github&hide_border=true&theme=dark_github" />
-      <img height="170" alt="Ross's GitHub stats" src="https://github-stats-extended.vercel.app/api?username=TheProdigy161&show_icons=true&rank_icon=github&hide_border=true&theme=light_github" />
+      <source media="(prefers-color-scheme: dark)" srcset="./profile/stats-dark.svg" />
+      <img height="170" alt="Ross's GitHub stats" src="./profile/stats-light.svg" />
     </picture>
   </a>
   <a href="https://github.com/TheProdigy161?tab=repositories">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=TheProdigy161&layout=compact&langs_count=6&hide_border=true&theme=dark_github" />
-      <img height="170" alt="Top languages" src="https://github-stats-extended.vercel.app/api/top-langs/?username=TheProdigy161&layout=compact&langs_count=6&hide_border=true&theme=light_github" />
+      <source media="(prefers-color-scheme: dark)" srcset="./profile/top-langs-dark.svg" />
+      <img height="170" alt="Top languages" src="./profile/top-langs-light.svg" />
     </picture>
   </a>
 </p>
@@ -36,26 +36,26 @@
 <p align="left">
   <a href="https://github.com/TheProdigy161/manga-api">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=TheProdigy161&repo=manga-api&hide_border=true&theme=dark_github_repocard" />
-      <img alt="manga-api" src="https://github-stats-extended.vercel.app/api/pin/?username=TheProdigy161&repo=manga-api&hide_border=true&theme=light_github_repocard" />
+      <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-manga-api-dark.svg" />
+      <img alt="manga-api" src="./profile/pin-manga-api-light.svg" />
     </picture>
   </a>
   <a href="https://github.com/TheProdigy161/manga-frontend">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=TheProdigy161&repo=manga-frontend&hide_border=true&theme=dark_github_repocard" />
-      <img alt="manga-frontend" src="https://github-stats-extended.vercel.app/api/pin/?username=TheProdigy161&repo=manga-frontend&hide_border=true&theme=light_github_repocard" />
+      <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-manga-frontend-dark.svg" />
+      <img alt="manga-frontend" src="./profile/pin-manga-frontend-light.svg" />
     </picture>
   </a>
   <a href="https://github.com/TheProdigy161/aws-s3-file-validator">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=TheProdigy161&repo=aws-s3-file-validator&hide_border=true&theme=dark_github_repocard" />
-      <img alt="aws-s3-file-validator" src="https://github-stats-extended.vercel.app/api/pin/?username=TheProdigy161&repo=aws-s3-file-validator&hide_border=true&theme=light_github_repocard" />
+      <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-aws-s3-file-validator-dark.svg" />
+      <img alt="aws-s3-file-validator" src="./profile/pin-aws-s3-file-validator-light.svg" />
     </picture>
   </a>
   <a href="https://github.com/TheProdigy161/gitpruned">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=TheProdigy161&repo=gitpruned&hide_border=true&theme=dark_github_repocard" />
-      <img alt="gitpruned" src="https://github-stats-extended.vercel.app/api/pin/?username=TheProdigy161&repo=gitpruned&hide_border=true&theme=light_github_repocard" />
+      <source media="(prefers-color-scheme: dark)" srcset="./profile/pin-gitpruned-dark.svg" />
+      <img alt="gitpruned" src="./profile/pin-gitpruned-light.svg" />
     </picture>
   </a>
 </p>
@@ -63,5 +63,5 @@
 ---
 
 <p align="center">
-  <sub>Stats powered by <a href="https://github.com/stats-organization/github-stats-extended">GitHub Stats Extended</a></sub>
+  <sub>Stats generated daily by <a href="https://github.com/stats-organization/github-readme-stats-action">GitHub Readme Stats Action</a></sub>
 </p>

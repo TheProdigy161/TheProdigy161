@@ -1,0 +1,149 @@
+name: Update README cards
+
+# Generates the stats cards into profile/ so the README never depends on a
+# public card server. A card that fails to generate keeps its previous SVG.
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: readme-cards
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Generate stats (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: stats
+          options: username=TheProdigy161&show_icons=true&rank_icon=github&hide_border=true&theme=light_github
+          path: profile/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate stats (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: stats
+          options: username=TheProdigy161&show_icons=true&rank_icon=github&hide_border=true&theme=dark_github
+          path: profile/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate top-langs (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: top-langs
+          options: username=TheProdigy161&layout=compact&langs_count=6&hide_border=true&theme=light_github
+          path: profile/top-langs-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate top-langs (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: top-langs
+          options: username=TheProdigy161&layout=compact&langs_count=6&hide_border=true&theme=dark_github
+          path: profile/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin-manga-api (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=TheProdigy161&repo=manga-api&hide_border=true&theme=light_github_repocard
+          path: profile/pin-manga-api-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin-manga-api (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=TheProdigy161&repo=manga-api&hide_border=true&theme=dark_github_repocard
+          path: profile/pin-manga-api-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin-manga-frontend (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=TheProdigy161&repo=manga-frontend&hide_border=true&theme=light_github_repocard
+          path: profile/pin-manga-frontend-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin-manga-frontend (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=TheProdigy161&repo=manga-frontend&hide_border=true&theme=dark_github_repocard
+          path: profile/pin-manga-frontend-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin-aws-s3-file-validator (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=TheProdigy161&repo=aws-s3-file-validator&hide_border=true&theme=light_github_repocard
+          path: profile/pin-aws-s3-file-validator-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin-aws-s3-file-validator (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=TheProdigy161&repo=aws-s3-file-validator&hide_border=true&theme=dark_github_repocard
+          path: profile/pin-aws-s3-file-validator-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin-gitpruned (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=TheProdigy161&repo=gitpruned&hide_border=true&theme=light_github_repocard
+          path: profile/pin-gitpruned-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate pin-gitpruned (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=TheProdigy161&repo=gitpruned&hide_border=true&theme=dark_github_repocard
+          path: profile/pin-gitpruned-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update README cards" || exit 0
+          git push
